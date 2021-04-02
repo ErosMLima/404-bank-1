@@ -21,7 +21,7 @@ export const LogoImg = styled.div`
     img {
      width:100%;
     }
-    p{ 
+    p{
         font-family: 'Concert One', cursive;
         font-size: 2.2rem;
         margin-top:20px;
@@ -29,7 +29,7 @@ export const LogoImg = styled.div`
         }
         @media(max-width: 600px) {
             p{font-size: 1.3rem;}
-            }  
+            }
 `
 export const StyleMargTop = styled.div`
     border-bottom: 80px solid  #7CC5EA;
@@ -60,9 +60,9 @@ export const Banner = styled.div`
     @media(max-width: 600px) {
         display: block;
         margin: 0 auto;
- 
+
     }
- 
+
 `
 export const CardAcess = styled.div`
     display:flex;
@@ -97,6 +97,13 @@ export const CardCadLogin = styled.div`
     background: white;
     border-radius: 8px;
     padding: 40px 46px;
+    span {
+        font-family: 'Concert One', cursive;
+        color: red;
+        text-align: center;
+        margin: 0.25rem auto;
+        font-size: 0.9rem;
+    }
     form {
         display: flex;
         flex-direction: column;
@@ -145,10 +152,10 @@ export const CardCadLogin = styled.div`
         font-size: 14px;
     }
     @media(max-width: 600px) {
-      
+
 
         margin: 10px auto;
- 
+
     }
 `
 
@@ -246,20 +253,20 @@ export const CardSection = styled.section`
     padding: 0px 16px;
     background: linear-gradient(340deg,  rgb(19, 184, 235) 20%, rgb(67, 238, 238)  55%, rgb(122, 243, 217) 60%, rgb(197, 248, 237) 100% );
     color:yellow;
-  
+
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-   
+
             h1{
                 font-size:6rem;
                 font-family: 'Londrina Shadow', cursive;
                 font-weight:bold;
                 grid-column:2/4;
                 margin: auto 0;
-           
+
             }
             p{
-                
+
                 font-size:30px;
                 color:#696969;
                font-weight:bold;
@@ -277,7 +284,7 @@ export const CardSection = styled.section`
     display:grid;
         grid-template-columns: 1fr;
         grid-template-areas:"h1 h1"  "p p" "span span";
-   
+
             h1{
                 font-size:4rem;
                 grid-area: h1;
@@ -288,7 +295,7 @@ export const CardSection = styled.section`
                 text-align: center;
             }
             span{
-           
+
                grid-area: p ;
                font-size:4.5rem;
                  }
@@ -315,10 +322,10 @@ ul{
 }
 
 footer{
-   
+
     display:flex;
     justify-content:space-around;
-  
+
     div{
         h1{
             color: #CDAD00;
@@ -329,7 +336,7 @@ footer{
 li{
     list-style:none;
 }
-a{ 
+a{
     color: #CDAD00;
      text-decoration:none;
      }
@@ -345,16 +352,16 @@ a{
             }
         }
         footer{
-   
+
             display:flex;
             justify-content:center;
- 
+
              p{
                 text-align: center;
                 padding-bottom:10px;
              }
    }
-        
+
      }
 
 

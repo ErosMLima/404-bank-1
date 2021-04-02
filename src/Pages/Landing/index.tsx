@@ -184,7 +184,7 @@ const Landing: React.FC = () => {
               <Input name="password" value={password} type="password" onChange={e => setPassword(e.target.value)} placeholder="Digite sua senha" />
               <Input name="confirmPassword" value={confirmPassword} type="password" onChange={handleSetConfirmPassword} placeholder="Confirme sua senha" />
               {
-                !passwordMatch && <span>Senha diferente</span>
+                !passwordMatch && <span className="pwd-wrong">Senha diferente</span>
               }
               {
                 loading ?
