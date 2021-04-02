@@ -1,18 +1,15 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  width: 100%;
-  height: 70vh;
+  width: 100vw;
+  max-height: 80vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 40px;
-  margin-top: 34px;
-
-  background: #e5e5e5;
-  padding: 50px;
+  background: #E5E5E5;
+  padding: 73px;
 `
 
 export const Card = styled.div`
