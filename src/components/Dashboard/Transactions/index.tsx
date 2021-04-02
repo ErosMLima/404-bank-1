@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent, useCallback } from 'react'
+import React, { useState, useEffect, ChangeEvent, useCallback, HTMLAttributes } from 'react'
 
 import { Contas, Lancamento } from '../../../types/dash-board'
 import Balance from '../Balance'
@@ -11,12 +11,20 @@ import Loader from '../../Loader'
 import { set_transaction_data } from '../../../store/dashboard/actions'
 
 import { BalanceExtractContainer, ContainerFilter } from './style'
+
 type TDataItem = {
+  id: number
+  date: string
   name: string
+  result: string
   value: string
 }
 
-const Transactions: React.FC = () => {
+interface TransactionsProps extends HTMLAttributes<HTMLDivElement> {
+  isMobile: boolean;
+}
+
+const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
 
   const [ contas, setContas ] = useState<Contas>()
   const [ loaded, setLoaded ] = useState(true)
@@ -46,8 +54,15 @@ const Transactions: React.FC = () => {
 
   const buildData = (data: Lancamento[]) => {
     const dataChart = data.map(dt => {
-      return { name: dt.descricao, value: dt.valor.toString()}
-    })
+      return {
+        id: dt.id,
+        date: dt.data,
+        name: dt.descricao,
+        result: dt.valor.toString().startsWith('-') ? 'sub' : 'add',
+        value: dt.valor.toString().startsWith('-')
+          ? dt.valor.toString().substring(1)
+          : dt.valor.toString()
+    }})
     setChartData(dataChart)
   }
 
@@ -110,7 +125,7 @@ const Transactions: React.FC = () => {
       <Extract contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
       {/* <FiArrowLeft onClick={() => {props.func('')}}/> */}
 
-      <Chart data={chartData} />
+      <Chart data={chartData} isMobile={isMobile} />
 
     </BalanceExtractContainer>
   )

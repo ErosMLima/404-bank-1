@@ -1,24 +1,37 @@
 import styled from 'styled-components'
 
 export const CardContainer = styled.div`
-  display: flex;
-  width: 99vw;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  color: #3f3f3f;
-  line-height: 1.7rem;
-  font-family: 'Concert One', cursive;
+    display: flex;
+    width: 99vw;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #3f3f3f;
+    line-height: 1.7rem;
+    font-family: 'Concert One', cursive;
+`
+
+export const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 85%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: #1d385699 1px 1px 4px 1px;
+    height: 400px;
 `
 
 export const CardDashboard = styled.div`
-  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
   padding: 0.5rem;
-  width: 85%;
+  width: 90%;
   background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: #1d385699 1px 1px 4px 1px;
   height: 300px;
-  overflow-y: scroll;
+  overflow-x: auto;
 
     .title {
         display: flex;

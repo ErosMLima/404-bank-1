@@ -81,7 +81,7 @@ const Dashboard: React.FC = () => {
             <DashMainMobile>
               <main>
                 {/* Render component by currentScreen */}
-                {currentScreen === 'Transações' && <Transactions></Transactions>}
+                {currentScreen === 'Transações' && <Transactions isMobile={isMobile}></Transactions>}
                 {currentScreen === 'Depósitos' && <Deposit />}
                 {currentScreen === 'Pagamentos' && <Payments func={changeComponent}></Payments>}
                 {currentScreen === 'Planos' && <Plans />}
@@ -165,7 +165,7 @@ const Dashboard: React.FC = () => {
             <DashMain>
               <main>
                 {/* Render component by currentScreen */}
-                {currentScreen === 'Transações' && <Transactions></Transactions>}
+                {currentScreen === 'Transações' && <Transactions isMobile={isMobile}></Transactions>}
                 {currentScreen === 'Depósitos' && <Deposit />}
                 {currentScreen === 'Pagamentos' && <Payments func={changeComponent}></Payments>}
                 {currentScreen === 'Planos' && <Plans />}

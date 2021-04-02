@@ -44,6 +44,7 @@ export const CardDashboard = styled.div`
         }
     }
     .receipts {
+        flex: 1;
         img {
             margin: 0.25rem;
         }
