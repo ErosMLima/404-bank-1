@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const ExitContainer = styled.div`
   position: fixed;
@@ -14,14 +14,14 @@ export const ExitContainer = styled.div`
   @keyframes show {
     0% {
       opacity: 0.1;
-      }
+    }
     100% {
       opacity: 1;
     }
   }
   h1 {
     color: #696969;
-    font-family: 'Concert One', cursive;
+    font-family: "Concert One", cursive;
     padding-bottom: 1rem;
   }
 `
@@ -39,34 +39,34 @@ export const CardExit = styled.div`
   flex-direction: column;
   text-align: center;
   button {
-      cursor: pointer;
-      background: #7CC5EA;
-      border-radius: 20px;
-      height: 48px;
-      width: 70%;
-      border: none;
-      margin: 1rem auto 1rem;
-      font-family: Roboto;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
+    cursor: pointer;
+    background: #7cc5ea;
+    border-radius: 20px;
+    height: 48px;
+    width: 70%;
+    border: none;
+    margin: 1rem auto 1rem;
+    font-family: Roboto;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    transition: 0.5s;
+    &:hover {
       color: white;
-      transition:0.5s;
-          &:hover {
-            color: white;
-            background:#7ceadb;
-          }
-          &:disabled {
-            background: #c1c1c1;
-          }
+      background: #7ceadb;
+    }
+    &:disabled {
+      background: #c1c1c1;
+    }
   }
   /* Animation show */
   @keyframes show {
     0% {
       opacity: 0.1;
-      }
+    }
     100% {
       opacity: 1;
     }
