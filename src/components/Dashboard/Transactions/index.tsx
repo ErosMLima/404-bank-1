@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent, useCallback } from 'react'
 
-import { Contas } from '../../../types/dash-board'
+import { Contas, Lancamento } from '../../../types/dash-board'
 import Balance from '../Balance'
 import Extract from '../Extract'
 import Chart from '../Charts'
@@ -11,24 +11,18 @@ import Loader from '../../Loader'
 import { set_transaction_data } from '../../../store/dashboard/actions'
 
 import { BalanceExtractContainer, ContainerFilter } from './style'
+type TDataItem = {
+  name: string
+  value: string
+}
 
 const Transactions: React.FC = () => {
-
-  const data = [
-    {
-      name: "Conta Banco",
-      value: 1500
-    },
-    {
-      name: "Conta crédito",
-      value: 11000
-    }
-  ]
 
   const [ contas, setContas ] = useState<Contas>()
   const [ loaded, setLoaded ] = useState(true)
   const [ referenceDate, setReferenceDate ] = useState(1)
-  // const [ chartData, setChartData ] = useState()
+  // const [ lancamentos, setLancamentos ] = useState([])<any>
+  const [ chartData, setChartData ] = useState<TDataItem[]>()
 
   const user = useSelector( (state: ApplicationStore) => state.user )
   const dashboard = useSelector(( state: ApplicationStore ) => state.dashboard)
@@ -50,6 +44,13 @@ const Transactions: React.FC = () => {
     return [year, month, day].join('-')
   }, [])
 
+  const buildData = (data: Lancamento[]) => {
+    const dataChart = data.map(dt => {
+      return { name: dt.descricao, value: dt.valor.toString()}
+    })
+    setChartData(dataChart)
+  }
+
   useEffect(() => {
     if ( contas )
       dispatch( set_transaction_data({ accounts: contas }) )
@@ -58,10 +59,9 @@ const Transactions: React.FC = () => {
   useEffect( ()=> {
     if ( dashboard.transactions_data ) {
       setContas(dashboard.transactions_data.accounts)
-      // if (dashboard.transactions_data.contaBanco.lancamentos) {
-
-      // }
-
+      if (dashboard.transactions_data.accounts.contaBanco.lancamentos.length) {
+        buildData(dashboard.transactions_data.accounts.contaBanco.lancamentos)
+      }
       return
     }
 
@@ -110,7 +110,7 @@ const Transactions: React.FC = () => {
       <Extract contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
       {/* <FiArrowLeft onClick={() => {props.func('')}}/> */}
 
-      <Chart data={data} />
+      <Chart data={chartData} />
 
     </BalanceExtractContainer>
   )

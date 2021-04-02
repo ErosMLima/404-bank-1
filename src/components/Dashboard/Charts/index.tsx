@@ -5,14 +5,15 @@ import { CardContainer, CardDashboard } from './style'
 
 type DataItem = {
   name: string
-  value: number
+  value: string
 }
 
 type ChartProps = {
-  data: DataItem[]
+  data?: DataItem[] | undefined
 }
 
 const Chart: React.FC<ChartProps> = ({ data }) => {
+  console.log(data)
   return (
     <CardContainer>
       <CardDashboard>
