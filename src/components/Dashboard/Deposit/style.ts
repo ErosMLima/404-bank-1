@@ -21,6 +21,7 @@ export const Card = styled.div`
   border-radius: 10px;
 
   background-color: #fdf9f9;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   .container {
     width: 100%;
