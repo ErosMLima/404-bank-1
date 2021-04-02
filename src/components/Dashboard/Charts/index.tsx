@@ -37,7 +37,7 @@ const Chart: React.FC<ChartProps> = ({ data, isMobile }) => {
         <p><strong>Lançamentos</strong></p>
       </div>
       <CardDashboard>
-      <BarChart width={data?.length ? data.length * 65 : 300} height={250} data={data} layout="horizontal">
+      <BarChart width={data?.length ? data.length * 70 : 300} height={250} data={data} layout="horizontal">
         <Bar stackId="id" dataKey="value" >
           {
             data?.map((entry, index) => (
