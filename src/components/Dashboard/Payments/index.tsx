@@ -15,6 +15,8 @@ import { FormHandles } from '@unform/core'
 import getValidationErrors from '../../../utils/getValidationErrors'
 import Loader from '../../Loader'
 
+import { CardContainer, CardDashboard } from './styles'
+
 interface PaymentsProps {
   // eslint-disable-next-line @typescript-eslint/ban-types
   func: Function;
@@ -140,9 +142,9 @@ const Payments: React.FC<PaymentsProps> = () => {
   }, [])
 
   return (
-    <>
-      <div>
-        <Form ref={formRef} onSubmit={handleSubmit}>
+    <CardContainer>
+      <CardDashboard>
+        <Form className="header" ref={formRef} onSubmit={handleSubmit}>
           <p>
             Informe os dados para realizar sua transferência
             </p>
@@ -155,15 +157,14 @@ const Payments: React.FC<PaymentsProps> = () => {
           {loading ? (
             <Loader style={{ marginTop: 59 }} />
           ) : (
-              <button type="submit">
+              <button className="button-transferir" type="submit">
                 <span>Transferir agora</span>
-                <FaArrowRight color="#8c52e5" />
               </button>
             )}
         </Form>
 
-      </div>
-    </>
+      </CardDashboard>
+    </CardContainer>
   )
 
 }
