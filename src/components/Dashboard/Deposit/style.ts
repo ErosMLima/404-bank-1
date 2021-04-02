@@ -56,4 +56,11 @@ export const Card = styled.div`
     color: #ffff;
     background-color: #3c92fd;
   }
+
+  @media only screen and (max-width: 768px) {
+    top: 10px;
+    min-width: 90vw;
+    height: 80vh;
+    min-height: 70vh;
+  }
 `

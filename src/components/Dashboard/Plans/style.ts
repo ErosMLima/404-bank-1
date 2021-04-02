@@ -36,16 +36,24 @@ export const Repositories = styled.div`
   }
 `
 export const AddPlans = styled.div`
-  background-color: #7cc5ea;
-  width: 250px;
-  height: 50px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: #ffff;
+  background-color: #3c92fd;
   display: flex;
-  margin: 0 74px;
+  margin: 1rem;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    margin: 1rem auto;
+  }
 `
 
 export const CardModal = styled.div`
@@ -66,7 +74,6 @@ export const CardAddPlans = styled.div`
 `
 export const CardExit = styled.div`
   display: flex;
-
   width: 50vw;
   height: 45vh;
   background: white;
@@ -100,12 +107,22 @@ export const CardExit = styled.div`
   }
 
   button {
-    background-color: #7cc5ea;
-    width: 9vw;
     border-radius: 10px;
+    color: #ffff;
+    background-color: #3c92fd;
+    width: 9vw;
     padding: 10px;
     border: none;
     margin-top: 20px;
+  }
+
+  /* MOBILE */
+  @media only screen and (max-width: 768px) {
+    width: 80vw;
+    height: 70vh;
+    button {
+      width: 80%;
+    }
   }
 
   @keyframes show {
