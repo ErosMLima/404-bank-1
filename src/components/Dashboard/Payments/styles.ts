@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 export const CardContainer = styled.div`
   width: 100vw;
-  
+  max-height: 80vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ export const CardDashboard = styled.div`
 
   .header-form {
     p {
-      font-size: 36px;
+      font-size: 2rem;
     }
   }
 

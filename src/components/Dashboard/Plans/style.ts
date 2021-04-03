@@ -2,19 +2,27 @@ import styled from "styled-components"
 
 export const Repositories = styled.div`
   width: 100vw;
-  padding: 0 74px;
-  margin-bottom: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+`
+export const PlanCards = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
 
   a {
     background: #fff;
     border-radius: 5px;
-    width: 100%;
     padding: 24px;
-
-    display: block;
     text-decoration: none;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     transition: transform 0.2s;
 
@@ -27,34 +35,35 @@ export const Repositories = styled.div`
       }
 
       div {
-        margin-left: 16px;
         strong {
           font-size: 20px;
           color: #3d3d4d;
         }
       }
-
+  }
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+    a {
+      flex-direction: row;
+    }
   }
 `
+
 export const AddPlans = styled.div`
   cursor: pointer;
   width: 200px;
   height: 40px;
   border: 0;
-  margin-top: 30px;
   border-radius: 10px;
   color: #ffff;
   background-color: #3c92fd;
   display: flex;
-  margin: 1rem;
+  margin: 1.5rem auto;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 768px) {
-    margin: 1rem auto;
-  }
 `
 
 export const CardModal = styled.div`

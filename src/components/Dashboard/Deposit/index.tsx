@@ -1,5 +1,4 @@
 import React, { ChangeEvent, useCallback, useRef, useState } from "react"
-import { FaArrowRight } from "react-icons/fa"
 import api from "../../../services/api"
 import { useDispatch, useSelector } from "react-redux"
 import { ApplicationStore } from "../../../store"
@@ -17,7 +16,7 @@ import {
 import getValidationErrors from "../../../utils/getValidationErrors"
 import Loader from "../../Loader"
 
-import { Container, Card } from "./style"
+import { Container, Card, ChangeButton } from "./style"
 
 const Deposit: React.FC = () => {
   const dispatch = useDispatch()
@@ -161,6 +160,14 @@ const Deposit: React.FC = () => {
                   ? "Realize o pagamento da sua fatura"
                   : "Realize o seu depósito"}
               </p>
+              <ChangeButton onClick={() => setInvoicePayment(!invoicePayment)}>
+                <span>
+                  {invoicePayment ? "Pagamento" : "Depósito"}
+                </span>
+                <span className="material-icons">
+                  cached
+                </span>
+              </ChangeButton>
             </div>
 
             <Form ref={formRef} onSubmit={handleSubmit}>

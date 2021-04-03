@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100vw;
-  max-height: 80vh;
+  max-height: 85vh;
 
   display: flex;
   justify-content: center;
@@ -11,7 +11,24 @@ export const Container = styled.div`
   background: #E5E5E5;
   padding: 73px;
 
-  
+`
+
+export const ChangeButton = styled.button`
+    width: 50%;
+    height: 40px;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #ffff;
+    background-color: #7CC5EA;
+    .material-icons {
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 25%;
+    }
+
 `
 
 export const Card = styled.div`
@@ -32,7 +49,7 @@ export const Card = styled.div`
 
   .header-form {
     p {
-      font-size: 36px;
+      font-size: 2rem;
     }
   }
 

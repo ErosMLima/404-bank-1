@@ -23,6 +23,7 @@ import { set_plans_data } from "../../../store/dashboard/actions"
 import {
   Repositories,
   CardAddPlans,
+  PlanCards,
   AddPlans,
   CardExit,
   CardModal,
@@ -85,19 +86,21 @@ const Plans: React.FC = () => {
           </AddPlans>
         )}
         <Repositories>
+          <PlanCards>
           {plans?.map((plan, index) => {
             return (
-              <a key={index}>
-                <p className="title-card">
-                  <b>{plan.descricao}: </b>
-                </p>
-                <p> {plan.login} / </p>
-                <p className="type-movement">
-                  Movimentação tipo: <span> {plan.tipoMovimento}</span>
-                </p>
-              </a>
+                <a key={index}>
+                  <p className="title-card">
+                    <b>{plan.descricao}: </b>
+                  </p>
+                  <p> {plan.login} / </p>
+                  <p className="type-movement">
+                    Movimentação tipo: <span> {plan.tipoMovimento}</span>
+                  </p>
+                </a>
             )
           })}
+          </PlanCards>
         </Repositories>
       </>
     )
