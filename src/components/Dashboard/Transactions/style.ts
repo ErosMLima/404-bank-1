@@ -53,4 +53,7 @@ export const ContainerFilter = styled.div`
   input {
     margin-left: 1rem;
   }
+  @media only screen and (min-width: 768px) {
+    width: inherit;
+  }
 `

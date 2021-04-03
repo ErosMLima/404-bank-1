@@ -84,6 +84,7 @@ export const DashNavigation = styled.div`
           font-size:1.6rem;
           margin: 0 20px;
           a {
+              cursor: pointer;
               padding:10px 10px 0 10px;
               border-radius:5px;
               transition:0.15s;

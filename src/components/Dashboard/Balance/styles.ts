@@ -10,18 +10,27 @@ export const BalanceContainer = styled.div`
     color: #3f3f3f;
     line-height: 1.7rem;
     font-family: 'Concert One', cursive;
-    /* Desktop */
-    /* @media only screen and (min-width: 768px) {
+`
+
+export const BalanceMiddle = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
         flex-direction: row;
-        flex-wrap: wrap;
-
-    } */
-
+        width: 90%;
+        justify-content: space-around;
+        padding: 0.5rem 2rem;
+        div {
+            margin: 1rem;
+        }
+    }
 `
 
 export const IdentificaUser = styled.div`
     display: flex;
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
     font-size: 1.1rem;
     height: 45px;
     width: 85%;
@@ -35,6 +44,12 @@ export const IdentificaUser = styled.div`
         span {
             cursor: pointer;
             vertical-align: bottom;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        justify-content: center;
+        p {
+            margin-right: 1rem;
         }
     }
 `
@@ -73,6 +88,6 @@ export const CardDashboard = styled.div`
         color: gray;
         border-radius: 5px;
         width: 80%;
-        transition: all 1s;
+        transition: all 0.2s;
     }
 `

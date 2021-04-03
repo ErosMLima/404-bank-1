@@ -2,12 +2,14 @@ import styled from 'styled-components'
 
 export const CardContainer = styled.div`
     display: flex;
-    width: 99vw;
+    width: 100%;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     color: #3f3f3f;
     line-height: 1.7rem;
     font-family: 'Concert One', cursive;
+    @media only screen and (min-width: 768px) {
+        width: 99%;
+    }
 `
 
 export const Card = styled.div`
