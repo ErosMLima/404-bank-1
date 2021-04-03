@@ -10,6 +10,8 @@ export const Container = styled.div`
 
   background: #E5E5E5;
   padding: 73px;
+
+  
 `
 
 export const Card = styled.div`
@@ -48,7 +50,7 @@ export const Card = styled.div`
   }
 
   .button-Deposit {
-    width: 200px;
+    width: 100%;
     height: 40px;
     border: 0;
     margin-top: 30px;
@@ -60,7 +62,6 @@ export const Card = styled.div`
   @media only screen and (max-width: 768px) {
     top: 10px;
     min-width: 90vw;
-    height: 80vh;
-    min-height: 70vh;
+    max-height: 110vh;
   }
 `

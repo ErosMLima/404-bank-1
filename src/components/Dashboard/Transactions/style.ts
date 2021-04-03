@@ -1,19 +1,16 @@
 import styled from 'styled-components'
 
 export const TransactionsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 95%;
-  width: 100%;
-  max-width: 700px;
-  border: 1px solid green;
+  width: 100vw;
+  max-height: 80vh;
 
-  @media screen and (max-width: 900px){
-    width: 90%;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #E5E5E5;
+  padding: 73px;
+
 `
 
 export const MonthConatiner = styled.div`
