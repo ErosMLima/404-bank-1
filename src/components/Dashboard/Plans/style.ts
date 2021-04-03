@@ -18,21 +18,22 @@ export const Repositories = styled.div`
     align-items: center;
     transition: transform 0.2s;
 
-    & + a {
-      margin-top: 16px;
-    }
-
-    &:hover {
-      transform: translateX(10px);
-    }
-
-    div {
-      margin-left: 16px;
-      strong {
-        font-size: 20px;
-        color: #3d3d4d;
+      & + a {
+        margin-top: 16px;
       }
-    }
+
+      &:hover {
+        transform: translateX(10px);
+      }
+
+      div {
+        margin-left: 16px;
+        strong {
+          font-size: 20px;
+          color: #3d3d4d;
+        }
+      }
+
   }
 `
 export const AddPlans = styled.div`
