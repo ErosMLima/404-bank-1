@@ -19,7 +19,8 @@ import {
   DashNavigationMobile,
   DashboardContainer,
   DashMain,
-  DashNavigation
+  DashNavigation,
+  DashNavBottom
 } from './styles'
 
 import {
@@ -82,7 +83,6 @@ const Dashboard: React.FC = () => {
 
             <DashMainMobile>
               <main>
-                {/* Render component by currentScreen */}
                 {currentScreen === 'Transações' && <Transactions isMobile={isMobile}></Transactions>}
                 {currentScreen === 'Depósitos' && <Deposit />}
                 {currentScreen === 'Pagamentos' && <Payments func={changeComponent}></Payments>}
@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
               </main>
             </DashMainMobile>
 
-            <DashNavigationMobile> {/** Não estou conseguindo identificar esse campo */}
+            <DashNavigationMobile>
               <nav>
                 <CardMenu isMobile={isMobile}
                   backgroundColor='#7cc5ea'
@@ -122,7 +122,6 @@ const Dashboard: React.FC = () => {
           :
           <DashboardContainer>
 
-
             <DashNavigation>
               <nav>
                 <ul>
@@ -138,11 +137,7 @@ const Dashboard: React.FC = () => {
                 </ul>
               </nav>
 
-
-
-              
-            </DashNavigation>
-            <nav className="bottom">
+            <DashNavBottom className="bottom">
               <CardMenu isMobile={isMobile}
                 backgroundColor='#7cc5ea'
                 title='Transações'
@@ -159,7 +154,8 @@ const Dashboard: React.FC = () => {
                 backgroundColor='#A2ABFE'
                 title='Planos'
                 onClick={() => changeComponent('Planos')} selected={currentScreen === 'Planos'} />
-            </nav>
+            </DashNavBottom>
+            </DashNavigation>
 
             <DashMain>
               <main>

@@ -57,38 +57,53 @@ export const DashMain = styled.div`
   width: 100%;
 `
 
-export const DashNavigation = styled.div` //-----------
- background:#7CC5EA;
+export const DashNavBottom = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  div {
+      padding: 0 1rem;
+  }
+`
+
+export const DashNavigation = styled.div`
+  background:#7CC5EA;
   width: 100vw;
   box-shadow: 5px 5px 10px rgb(211, 205, 205);
-  nav{
+  nav {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items:center;
-    margin:10px;
-      ul{
+    margin: 10px;
+      ul {
         display:flex;
         align-items:center;
-        li{
-
+        li {
           list-style:none;
           color:white;
           font-size:1.6rem;
           margin: 0 20px;
-          a{
-            padding:10px 10px 0 10px;
-            border-radius:5px;
-            transition:0.15s;
-            svg{
-              margin-top:5px;
-              }&:hover{
+          a {
+              padding:10px 10px 0 10px;
+              border-radius:5px;
+              transition:0.15s;
+            svg {
+                margin-top:5px;
+              } &:hover{
             background:#1da0e2;
           }
           }
-
         }
     }
+  .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
+  .bottom {
+    border: 2px solid red;
+  }
+}
 
 
   /**

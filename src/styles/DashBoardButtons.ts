@@ -42,7 +42,7 @@ export const BtnContainer = styled.div<BtnContainerProps>`
   justify-content: space-around;
   background-color: ${(props) => props.backgroundColor};
   color: white;
-  width: 15vw;
+  width: 18vw;
   margin: 1rem;
   border-radius: 10px;
 `
