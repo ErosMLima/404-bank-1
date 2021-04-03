@@ -59,6 +59,7 @@ const Landing: React.FC = () => {
       password &&
       confirmPassword &&
       cpf.length === 11 &&
+      checkCpf(cpf) &&
       username &&
       passwordMatch) setIsFilled(true)
     else setIsFilled(false)
@@ -158,6 +159,37 @@ const Landing: React.FC = () => {
     } else setPasswordMatch(true)
   }
 
+  const checkCpf = (strCPF: string): boolean => {
+        let sum
+        let rest
+        sum = 0
+        let i = 1
+      if (strCPF == "00000000000" 
+      || strCPF == "11111111111" 
+      || strCPF == "22222222222" 
+      || strCPF == "33333333333" 
+      || strCPF == "44444444444"
+      || strCPF == "55555555555"
+      || strCPF == "66666666666"
+      || strCPF == "77777777777"
+      || strCPF == "88888888888"
+      || strCPF == "99999999999") return false
+    
+      for (i=1; i<=9; i++) sum = sum + parseInt(strCPF.substring(i-1, i)) * (11 - i)
+      rest = (sum * 10) % 11
+    
+        if ((rest == 10) || (rest == 11))  rest = 0
+        if (rest != parseInt(strCPF.substring(9, 10)) ) return false
+    
+      sum = 0
+        for (i = 1; i <= 10; i++) sum = sum + parseInt(strCPF.substring(i-1, i)) * (12 - i)
+        rest = (sum * 10) % 11
+    
+        if ((rest == 10) || (rest == 11))  rest = 0
+        if (rest != parseInt(strCPF.substring(10, 11) ) ) return false
+        return true
+  }
+
   return (
     <>
       <CardAcess>
@@ -188,7 +220,7 @@ const Landing: React.FC = () => {
               }
               {
                 loading ?
-                  <Loader /> : <button type="submit">CONTINUAR<FaArrowRight className="ArrowRight" /></button>}
+                <Loader /> : <button disabled={!isFilled} type="submit">CONTINUAR<FaArrowRight className="ArrowRight" /></button>}
             </Form>
           </CardCadLogin>
         </Banner>
