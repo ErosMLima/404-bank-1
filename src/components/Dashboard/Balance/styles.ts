@@ -10,6 +10,13 @@ export const BalanceContainer = styled.div`
     color: #3f3f3f;
     line-height: 1.7rem;
     font-family: 'Concert One', cursive;
+    /* Desktop */
+    /* @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    } */
+
 `
 
 export const IdentificaUser = styled.div`

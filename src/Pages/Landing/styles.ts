@@ -69,7 +69,7 @@ export const CardAcess = styled.div`
     justify-content:flex-end;
     button{
         cursor: pointer;
-        height: 50px;
+        height: 40px;
         color:#7CC5EA;
         font-family: 'Concert One', cursive;
         font-size: 1.5rem;

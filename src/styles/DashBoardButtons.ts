@@ -11,7 +11,7 @@ export const BtnContainerMobile = styled.div<BtnContainerProps>`
   color: white;
   background-color: ${(props) => props.backgroundColor};
   background: #71b8dc;
-  margin: 0.2rem;
+  margin: 0.15rem;
 `
 
 export const LabelMobile = styled.span`
@@ -25,7 +25,7 @@ const BtnIcon = styled.span`
 `
 
 export const BtnIconMobile = styled(BtnIcon)`
-  font-size: 3rem;
+  font-size: 2.8rem;
   width: 90px;
 `
 
@@ -42,7 +42,7 @@ export const BtnContainer = styled.div<BtnContainerProps>`
   justify-content: space-around;
   background-color: ${(props) => props.backgroundColor};
   color: white;
-  width: 15vw;
+  width: 18vw;
   margin: 1rem;
   border-radius: 10px;
 `

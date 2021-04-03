@@ -237,11 +237,7 @@ const Landing: React.FC = () => {
         </Section>
       </CardMargin>
 
-
-
-
       <CardSection>
-
 
         <h1>ZERO ANUIDADE</h1>
         <p>Burocracia custa caro. Somos eficientes para você não ter que pagar tarifas.</p>
