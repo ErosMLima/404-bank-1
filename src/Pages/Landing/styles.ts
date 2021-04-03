@@ -97,6 +97,7 @@ export const CardCadLogin = styled.div`
     background: white;
     border-radius: 8px;
     padding: 40px 46px;
+    animation: 0.8s ease 0s 1 normal forwards enterLeft;
     span {
         font-family: 'Concert One', cursive;
         color: red;
@@ -151,12 +152,23 @@ export const CardCadLogin = styled.div`
         padding: 10px 32px 10px 14px;
         font-size: 14px;
     }
+
     @media(max-width: 600px) {
-
-
         margin: 10px auto;
-
     }
+
+    @keyframes enterLeft {
+    0% {
+      position: relative;
+      right: -80px;
+      opacity: 0.4;
+      }
+    100% {
+      position: relative;
+      right: 0;
+      opacity: 1;
+    }
+  }
 `
 
 export const CardMargin = styled.div`

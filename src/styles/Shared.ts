@@ -131,3 +131,11 @@ export const CardRecover = styled.div`
     font-size: 14px;
   }
 `
+
+export const LoadingContainer = styled.div`
+  position: relative;
+  text-align: center;
+  width: 150px;
+  bottom: 20px;
+  margin: 2rem auto;
+`

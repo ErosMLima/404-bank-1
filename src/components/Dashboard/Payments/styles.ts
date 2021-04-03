@@ -37,6 +37,13 @@ export const CardDashboard = styled.div`
   form {
     width: 100%;
     display: block;
+    span {
+        font-family: 'Concert One', cursive;
+        color: red;
+        text-align: center;
+        margin: 0.25rem auto;
+        font-size: 0.9rem;
+    }
   }
   input {
     width: 100%;

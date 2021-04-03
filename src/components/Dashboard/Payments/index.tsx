@@ -158,7 +158,7 @@ const Payments: React.FC<PaymentsProps> = () => {
             <Loader style={{ marginTop: 59 }} />
           ) : (
               <button className="button-transferir" type="submit">
-                <span>Transferir agora</span>
+                <p>Transferir agora</p>
               </button>
             )}
         </Form>
