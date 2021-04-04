@@ -3,13 +3,18 @@ import styled from 'styled-components'
 export const CardContainer = styled.div`
     display: flex;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-self: center;
     justify-content: center;
+    background: #7cc5ea;
     color: #3f3f3f;
     line-height: 1.7rem;
     font-family: 'Concert One', cursive;
-    @media only screen and (min-width: 768px) {
+    /* @media only screen and (min-width: 768px) {
         width: 99%;
-    }
+    } */
 `
 
 export const Card = styled.div`
@@ -22,7 +27,7 @@ export const Card = styled.div`
     width: 85%;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: #1d385699 1px 1px 4px 1px;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
     height: 400px;
 `
 

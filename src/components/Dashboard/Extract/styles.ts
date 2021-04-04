@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const CardContainer = styled.div`
   display: flex;
   width: 99vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-self: center;
   justify-content: center;
   color: #3f3f3f;
   line-height: 1.7rem;
@@ -15,7 +19,7 @@ export const CardDashboard = styled.div`
   width: 85%;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: #1d385699 1px 1px 4px 1px;
+  box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
   height: 300px;
   overflow-y: scroll;
 

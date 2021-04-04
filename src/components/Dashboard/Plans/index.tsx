@@ -75,7 +75,7 @@ const Plans: React.FC = () => {
 
   if (loaded)
     return (
-      <>
+      <div style={{background: '#7cc5ea', height: '100vh', overflow: 'auto'}}>
         {isAddingCard && (
           <AddPlansModal closeModal={closeModal} setPlans={setPlans} />
         )}
@@ -102,7 +102,7 @@ const Plans: React.FC = () => {
           })}
           </PlanCards>
         </Repositories>
-      </>
+      </div>
     )
   else return <Loader style={{ border: "solid #f0f0f0 4px" }} />
 }

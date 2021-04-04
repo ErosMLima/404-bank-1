@@ -10,7 +10,6 @@ export const BtnContainerMobile = styled.div<BtnContainerProps>`
   justify-content: space-between;
   color: white;
   background-color: ${(props) => props.backgroundColor};
-  background: #71b8dc;
   margin: 0.15rem;
 `
 

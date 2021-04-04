@@ -142,29 +142,31 @@ const Payments: React.FC<PaymentsProps> = () => {
   }, [])
 
   return (
-    <CardContainer>
-      <CardDashboard>
-        <Form className="header" ref={formRef} onSubmit={handleSubmit}>
-          <p>
-            Informe os dados para realizar sua transferência
-            </p>
+    <div style={{background: '#7cc5ea', height: '90vh'}}>
+      <CardContainer>
+        <CardDashboard>
+          <Form className="header" ref={formRef} onSubmit={handleSubmit}>
+            <p>
+              Informe os dados para realizar sua transferência
+              </p>
 
-          <Input name="receiver" value={destinatario} onChange={e => setDestinatario(e.target.value)} type="text" placeholder="Login do destinatário" />
-          <Input name="date" value={data} onChange={e => setData(e.target.value)} type="date" />
-          <Input name="description" value={descricao} onChange={e => setDescricao(e.target.value)} type="text" placeholder="Descrição" />
-          <Input name="transferValue" value={valor ? valor : ''} onChange={handleChangeValue} type="number" placeholder="Qual o valor de sua transferência?" />
+            <Input name="receiver" value={destinatario} onChange={e => setDestinatario(e.target.value)} type="text" placeholder="Login do destinatário" />
+            <Input name="date" value={data} onChange={e => setData(e.target.value)} type="date" />
+            <Input name="description" value={descricao} onChange={e => setDescricao(e.target.value)} type="text" placeholder="Descrição" />
+            <Input name="transferValue" value={valor ? valor : ''} onChange={handleChangeValue} type="number" placeholder="Qual o valor de sua transferência?" />
 
-          {loading ? (
-            <Loader style={{ marginTop: 59 }} />
-          ) : (
-              <button className="button-transferir" type="submit">
-                <p>Transferir agora</p>
-              </button>
-            )}
-        </Form>
+            {loading ? (
+              <Loader style={{ marginTop: 59 }} />
+              ) : (
+                <button className="button-transferir" type="submit">
+                  <p>Transferir agora</p>
+                </button>
+              )}
+          </Form>
 
-      </CardDashboard>
-    </CardContainer>
+        </CardDashboard>
+      </CardContainer>
+    </div>
   )
 
 }

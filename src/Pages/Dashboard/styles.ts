@@ -6,14 +6,15 @@ export const DashboardContainerMobile = styled.div`
   width: 100%;
   margin: 0 0 3rem 0;
   min-height: 99vh;
+  background: #7cc5ea;
 `
 
 export const DashMainMobile = styled.div`
   display: flex;
   width: 100%;
   margin-bottom: 3rem;
-  height: 100vh;
   overflow-y: auto;
+  background: #7cc5ea;
 `
 
 export const DashNavigationMobile= styled.div`
@@ -24,7 +25,7 @@ export const DashNavigationMobile= styled.div`
   flex-direction: column;
   z-index: 2;
   width: 100%;
-  box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 5px 0px rgb(0 0 0 / 32%);
   nav {
     z-index: 2;
     display: flex;
@@ -55,6 +56,7 @@ export const DashboardContainer = styled.div`
 export const DashMain = styled.div`
   display: flex;
   width: 100%;
+  background: #7cc5ea;
 `
 
 export const DashNavBottom = styled.div`
@@ -69,7 +71,6 @@ export const DashNavBottom = styled.div`
 export const DashNavigation = styled.div`
   background:#7CC5EA;
   width: 100vw;
-  box-shadow: 5px 5px 10px rgb(211, 205, 205);
   nav {
     display: flex;
     justify-content: space-around;

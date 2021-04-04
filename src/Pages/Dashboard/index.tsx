@@ -93,23 +93,23 @@ const Dashboard: React.FC = () => {
             <DashNavigationMobile>
               <nav>
                 <CardMenu isMobile={isMobile}
-                  backgroundColor='#7cc5ea'
+                  backgroundColor='#69b7de'
                   title='Transações'
                   onClick={() => changeComponent('Transações')} selected={currentScreen === 'Transações'} />
                 <CardMenu isMobile={isMobile}
-                  backgroundColor='#7cc5ea'
+                  backgroundColor='#69b7de'
                   title='Depósitos'
                   onClick={() => changeComponent('Depósitos')} selected={currentScreen === 'Depósitos'} />
                 <CardMenu isMobile={isMobile}
-                  backgroundColor='#7cc5ea'
+                  backgroundColor='#69b7de'
                   title='Pagamentos'
                   onClick={() => changeComponent('Pagamentos')} selected={currentScreen === 'Pagamentos'} />
                 <CardMenu isMobile={isMobile}
-                  backgroundColor='#7cc5ea'
+                  backgroundColor='#69b7de'
                   title='Planos'
                   onClick={() => changeComponent('Planos')} selected={currentScreen === 'Planos'} />
 
-                <BtnContainerMobile backgroundColor='#7cc5ea' onClick={() => setIsExiting(true)}>
+                <BtnContainerMobile backgroundColor='#69b7de' onClick={() => setIsExiting(true)}>
                   <BtnIconMobile className="material-icons icon">
                     logout
                     </BtnIconMobile>

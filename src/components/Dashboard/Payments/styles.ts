@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const CardContainer = styled.div`
   width: 100vw;
-  max-height: 80vh;
+  background: #7cc5ea;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: #E5E5E5;
+  background: #7cc5ea;
   padding: 73px;
 `
 

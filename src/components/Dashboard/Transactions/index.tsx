@@ -105,22 +105,11 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
     getDashboardValues()
   }, [ referenceDate, user?.login, user?.token, formatDate, dashboard ])
 
-  const updateReference = (event:ChangeEvent<HTMLInputElement>) => {
-    const value = Number(event.target.value)
-    if (value > 0 && value <= 12)
-      setReferenceDate(value)
-  }
-
   if ( loaded )return (
     <BalanceExtractContainer>
       {/* Componente para página principal */}
 
       <Balance contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
-
-      <ContainerFilter>
-        <p>Meses para filtrar: </p>
-        <input  type="number" min={1} max={12} value={referenceDate} onChange={updateReference}/>
-      </ContainerFilter>
 
       <Extract contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
       {/* <FiArrowLeft onClick={() => {props.func('')}}/> */}
