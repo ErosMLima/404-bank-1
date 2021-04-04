@@ -152,7 +152,7 @@ const Deposit: React.FC = () => {
   }, [])
 
   return (
-    <div style={{background: '#7cc5ea', height: '90vh'}}>
+    <div style={{display: 'flex', justifyContent: "center", background: '#7cc5ea', height: '90vh'}}>
       <Container>
         <Card>
           <div className="container">

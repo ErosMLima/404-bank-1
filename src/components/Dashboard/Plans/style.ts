@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Repositories = styled.div`
   width: 100vw;
+  max-width: 1200px;
   padding: 0;
   display: flex;
   align-items: center;

@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const CardContainer = styled.div`
   width: 100vw;
   background: #7cc5ea;
-
+  align-self: flex-start;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
 
   background: #7cc5ea;
   padding: 73px;
