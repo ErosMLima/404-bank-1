@@ -1,10 +1,17 @@
 import styled from "styled-components"
 
+export const DepositContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  background: #7cc5ea;
+  height: 90vh;
+  width: 100vw;
+`
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-self: flex-start;
-  max-width: 1200px;
   margin: 1rem auto;
 
 

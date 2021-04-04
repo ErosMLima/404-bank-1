@@ -16,9 +16,8 @@ import {
 import getValidationErrors from "../../../utils/getValidationErrors"
 import Loader from "../../Loader"
 
-import { Container, Card, ChangeButton } from "./style"
+import { DepositContainer, Container, Card, ChangeButton } from "./style"
 import { LoadingContainer } from '../../../styles/Shared'
-import { FaBluetooth } from "react-icons/fa"
 
 const Deposit: React.FC = () => {
   const dispatch = useDispatch()
@@ -152,7 +151,7 @@ const Deposit: React.FC = () => {
   }, [])
 
   return (
-    <div style={{display: 'flex', justifyContent: "center", background: '#7cc5ea', height: '90vh'}}>
+    <DepositContainer>
       <Container>
         <Card>
           <div className="container">
@@ -210,7 +209,7 @@ const Deposit: React.FC = () => {
           </div>
         </Card>
       </Container>
-    </div>
+    </DepositContainer>
   )
 }
 

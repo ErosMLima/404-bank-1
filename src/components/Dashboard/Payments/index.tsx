@@ -142,7 +142,7 @@ const Payments: React.FC<PaymentsProps> = () => {
   }, [])
 
   return (
-    <div style={{display: 'flex', justifyContent: "center", background: '#7cc5ea', height: '90vh'}}>
+    <div style={{display: 'flex', justifyItems:'center', justifyContent: "center", background: '#7cc5ea', height: '90vh', width: '100vw'}}>
       <CardContainer>
         <CardDashboard>
           <Form className="header" ref={formRef} onSubmit={handleSubmit}>

@@ -75,7 +75,7 @@ const Plans: React.FC = () => {
 
   if (loaded)
     return (
-      <div style={{background: '#7cc5ea', height: '100vh', overflow: 'auto'}}>
+      <div style={{background: '#7cc5ea', height: '100vh', overflow: 'auto', width: '100vw'}}>
         {isAddingCard && (
           <AddPlansModal closeModal={closeModal} setPlans={setPlans} />
         )}
