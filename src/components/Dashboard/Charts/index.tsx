@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart, Bar, XAxis, Cell, YAxis } from 'recharts'
+import { BarChart, Bar, CartesianGrid, XAxis, Cell, YAxis } from 'recharts'
 
 import { CardContainer, Card, CardDashboard } from './style'
 
@@ -32,12 +32,11 @@ const Chart: React.FC<ChartProps> = ({ data, isMobile }) => {
   return (
     <CardContainer>
       <Card>
-
       <div>
-        <p><strong>Lançamentos</strong></p>
+        <p>Lançamentos</p>
       </div>
       <CardDashboard>
-      <BarChart width={data?.length ? data.length * 70 : 300} height={250} data={data} layout="horizontal">
+      <BarChart width={data?.length ? data.length * 28 : 300} height={250} data={data} layout="horizontal">
         <Bar stackId="id" dataKey="value" >
           {
             data?.map((entry, index) => (
@@ -47,6 +46,7 @@ const Chart: React.FC<ChartProps> = ({ data, isMobile }) => {
         </Bar>
         <XAxis dataKey="name" />
         <YAxis />
+        <CartesianGrid strokeDasharray="1 1" />
       </BarChart>
       </CardDashboard>
       </Card>

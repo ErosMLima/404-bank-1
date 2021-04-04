@@ -44,16 +44,21 @@ export const CardDashboard = styled.div`
         display: flex;
         margin: 0.5rem 0 1rem 0;
         p {
-            margin-top: 0.2rem;
+            margin-top: 0.3rem;
         }
     }
     .receipts {
         flex: 1;
-        img {
-            margin: 0.25rem;
-        }
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 0.5rem 0;
         display: flex;
-        justify-content: space-around;
         margin-bottom: 1rem;
+    }
+    @media only screen and (min-width: 768px) {
+        .receipts {
+            padding: 0 2rem;
+            justify-content: space-between;
+        }
     }
 `
