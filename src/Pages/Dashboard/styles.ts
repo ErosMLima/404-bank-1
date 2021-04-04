@@ -25,7 +25,6 @@ export const DashNavigationMobile= styled.div`
   flex-direction: column;
   z-index: 2;
   width: 100%;
-  box-shadow: 0px -1px 5px 0px rgb(0 0 0 / 32%);
   nav {
     z-index: 2;
     display: flex;
@@ -33,7 +32,7 @@ export const DashNavigationMobile= styled.div`
     align-content: center;
     justify-content: space-between;
     padding: 0.15rem;
-    height: 90px;
+    height: 85px;
     overflow: auto;
     div {
       padding: 0.1rem;

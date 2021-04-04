@@ -9,7 +9,7 @@ import React, {
   useState,
 } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { MdAdd, MdEventNote, MdClose } from "react-icons/md"
+import { MdClose } from "react-icons/md"
 import { useHistory } from "react-router-dom"
 import { toast } from "react-toastify"
 
@@ -21,6 +21,7 @@ import { UserData } from "../../../store/user/types"
 import { set_plans_data } from "../../../store/dashboard/actions"
 
 import {
+  PlansContainer,
   Repositories,
   CardAddPlans,
   PlanCards,
@@ -75,7 +76,7 @@ const Plans: React.FC = () => {
 
   if (loaded)
     return (
-      <div style={{background: '#7cc5ea', height: '100vh', overflow: 'auto', width: '100vw'}}>
+      <PlansContainer>
         {isAddingCard && (
           <AddPlansModal closeModal={closeModal} setPlans={setPlans} />
         )}
@@ -102,7 +103,7 @@ const Plans: React.FC = () => {
           })}
           </PlanCards>
         </Repositories>
-      </div>
+      </PlansContainer>
     )
   else return <Loader style={{ border: "solid #f0f0f0 4px" }} />
 }

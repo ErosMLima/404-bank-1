@@ -1,7 +1,17 @@
 import styled from "styled-components"
 
-export const Repositories = styled.div`
+export const PlansContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #7cc5ea;
+  height: 90vh;
   width: 100vw;
+  align-content: center;
+  align-items: center;
+`
+
+export const Repositories = styled.div`
+  width: 100%;
   max-width: 1200px;
   padding: 0;
   display: flex;
