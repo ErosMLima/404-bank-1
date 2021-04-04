@@ -116,11 +116,11 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
       {/* Componente para página principal */}
 
       <Balance contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
-
+{/*
       <ContainerFilter>
         <p>Meses para filtrar: </p>
         <input  type="number" min={1} max={12} value={referenceDate} onChange={updateReference}/>
-      </ContainerFilter>
+      </ContainerFilter> */}
 
       <Extract contaBanco={contas?.contaBanco} contaCredito={contas?.contaCredito}/>
       {/* <FiArrowLeft onClick={() => {props.func('')}}/> */}
