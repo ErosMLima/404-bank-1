@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent, useCallback, HTMLAttributes } from 'react'
+import React, { useState, useEffect, useCallback, HTMLAttributes } from 'react'
 
 import { Contas, Lancamento } from '../../../types/dash-board'
 import Balance from '../Balance'
@@ -10,7 +10,7 @@ import { ApplicationStore } from '../../../store'
 import Loader from '../../Loader'
 import { set_transaction_data } from '../../../store/dashboard/actions'
 
-import { BalanceExtractContainer, ContainerFilter } from './style'
+import { BalanceExtractContainer } from './style'
 
 type TDataItem = {
   id: number
@@ -104,6 +104,8 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
 
     getDashboardValues()
   }, [ referenceDate, user?.login, user?.token, formatDate, dashboard ])
+
+
 
   if ( loaded )return (
     <BalanceExtractContainer>
