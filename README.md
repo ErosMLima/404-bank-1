@@ -1,24 +1,24 @@
-# 404 BANK
+# NOW BANK
 
 
 ![screen](./screen.png)
 
 This is a project of a fake bank web application.
 
-You can find the demo "Add link"
+You can find the [demo here](404-bank.vercel.app)
 
 ## About:
 
 Project based on Accenture & Gama Academy's React Challenge
 Fake Bank Web Application created on top of [Douglas Morais desafio-accenture-react](https://github.com/mrdouglasmorais/desafio-accenture-react)
 
-**404 Bank** communicates using REST endpoints. You can find the API Documentation [here](https://accenture-java-desafio.herokuapp.com/swagger-ui.html#/)
+**Now Bank** communicates using REST endpoints. You can find the API Documentation [here](https://accenture-java-desafio.herokuapp.com/swagger-ui.html#/)
 
 Project written in [TypeScript](https://www.typescriptlang.org/)
 
 ### Tech stack
 
- 1. React, React Dom, and React Router 2.
+ 1. React, React Dom, and React Router.
  2. Redux
  3. Axios
  4. Json Web Token
@@ -27,7 +27,7 @@ Project written in [TypeScript](https://www.typescriptlang.org/)
  7. Recharts
  8. Jest
 
-## Running 404 Bank
+## Running Now Bank
 
 Clone this repository
 
