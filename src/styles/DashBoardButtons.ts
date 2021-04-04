@@ -33,26 +33,32 @@ export const BtnIconDesktop = styled(BtnIcon)`
   //font-size: 4rem;
   //order: 2;
   opacity: 0.5;
-  font-size: 8em;
+  font-size: 3.5rem;
   transform: rotate(-10deg);
   //margin:-25px -40px 0 0;
   margin:0 -40px 0 0;
   color:white;
+  @media only screen and (min-width: 768px) {
+    font-size: 8rem;
+  }
 `
 
 export const BtnContainer = styled.div<BtnContainerProps>`
- cursor: pointer;
+  cursor: pointer;
   display: flex;
   align-content: center;
   //align-items: center;
   justify-content: space-around;
   background-color: ${(props) => props.backgroundColor};
   color: white;
-  width: 17rem;
-    height: 9rem;
+  width: 17%;
+  height: 5rem;
   margin: 1rem;
   border-radius: 5px;
   border-left: 15px solid rgba(0, 0, 0, 0.144);
+  @media only screen and (min-width: 768px) {
+    height: 9rem;
+  }
   //border-top: 40px solid rgba(0, 0, 0, 0.075);
   //box-shadow: 5px 10px 15px rgb(211 205 205);
   /*cursor: pointer;
