@@ -5,7 +5,7 @@
 
 This is a project of a fake bank web application.
 
-You can find the [demo here](404-bank.vercel.app)
+You can find the [demo here](https://404-bank.vercel.app/)
 
 ## About:
 
@@ -27,6 +27,9 @@ Project written in [TypeScript](https://www.typescriptlang.org/)
  7. Recharts
  8. Jest
 
+### Design
+
+Figma Design [here](https://www.figma.com/file/6Hp4vqNbLK4zT3OVdEJl7v/Banco-Nowbank?node-id=0%3A1)
 ## Running Now Bank
 
 Clone this repository

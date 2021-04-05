@@ -17,7 +17,6 @@ export const Container = styled.div`
   width: 100%;
   margin: 1rem auto;
   background: #7cc5ea;
-  padding: 1rem 3rem;
 `
 
 export const ChangeButton = styled.button`
