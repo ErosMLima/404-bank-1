@@ -25,7 +25,7 @@ export const ChangeButton = styled.button`
     height: 40px;
     border: 0;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #ffff;
     background-color: #7CC5EA;
     .material-icons {
@@ -44,7 +44,7 @@ export const Card = styled.div`
   display: flex;
 
   padding: 42px;
-  border-radius: 10px;
+  border-radius: 5px;
 
   background-color: #fdf9f9;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -85,7 +85,7 @@ export const Card = styled.div`
     height: 40px;
     border: 0;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #ffff;
     background-color: #3c92fd;
   }

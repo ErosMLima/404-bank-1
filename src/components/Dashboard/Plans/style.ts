@@ -12,7 +12,7 @@ export const PlansContainer = styled.div`
 
 export const Repositories = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1260px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ export const AddPlans = styled.div`
   width: 200px;
   height: 40px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #ffff;
   background-color: #3c92fd;
   display: flex;

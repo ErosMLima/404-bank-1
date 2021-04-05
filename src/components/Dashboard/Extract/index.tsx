@@ -59,7 +59,9 @@ const Extract: React.FC<ExtractData> = (props) => {
                             <div className="text-items">
                                 <strong>{typePlans(launch.planoConta.tipoMovimento)}</strong>
                                 <p>{launch.descricao}</p>
-                                <strong>{launch.valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong>
+                                <strong
+                                    className={launch.valor.toString().includes('-') ? 'negative' : 'positive'}
+                                    >{launch.valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong>
                             </div>
                             <p className="date">{launch.data}</p>
                         </div>

@@ -4,8 +4,8 @@ export const BalanceContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 99vw;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0;
     color: #3f3f3f;
@@ -22,9 +22,8 @@ export const BalanceMiddle = styled.div`
     padding: 0 1rem;
     @media only screen and (min-width: 768px) {
         flex-direction: row;
-        width: 90%;
         justify-content: space-around;
-        padding: 0.5rem 2rem;
+        padding: 0;
         div {
             margin: 1rem;
         }
@@ -36,7 +35,7 @@ export const IdentificaUser = styled.div`
     margin: 0.5rem auto;
     font-size: 1.1rem;
     height: 45px;
-    width: 85%;
+    width: 100%;
     background-color: #7cc5ea;
     color: white;
     justify-content: space-around;
@@ -62,11 +61,11 @@ export const CardContainer = styled.div`
 `
 
 export const CardDashboard = styled.div`
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0.5rem;
-    width: 85%;
+    width: 100%;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
     img {
         margin-left: 0.7rem;

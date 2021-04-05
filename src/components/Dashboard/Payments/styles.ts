@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const CardContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   background: #7cc5ea;
   align-self: flex-start;
-  max-width: 1200px;
+  max-width: 1260px;
   display: flex;
   justify-content: center;
 
@@ -18,7 +18,7 @@ export const CardDashboard = styled.div`
   display: flex;
 
   padding: 42px;
-  border-radius: 10px;
+  border-radius: 5px;
 
   background-color: #fdf9f9;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -59,7 +59,7 @@ export const CardDashboard = styled.div`
     height: 40px;
     border: 0;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #ffff;
     background-color: #3c92fd;
   }

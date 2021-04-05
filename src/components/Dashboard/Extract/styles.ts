@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const CardContainer = styled.div`
   display: flex;
-  width: 99vw;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 1rem;
   justify-self: center;
@@ -14,11 +14,11 @@ export const CardContainer = styled.div`
 `
 
 export const CardDashboard = styled.div`
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding: 0.5rem;
-  width: 85%;
+  width: 100%;
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
   height: 300px;
   overflow-y: scroll;
@@ -54,6 +54,14 @@ export const CardDashboard = styled.div`
         padding: 0.5rem 0;
         display: flex;
         margin-bottom: 1rem;
+        div {
+            .negative {
+                color: red;
+            }
+            .positive {
+                color: green;
+            }
+        }
     }
     @media only screen and (min-width: 768px) {
         .receipts {

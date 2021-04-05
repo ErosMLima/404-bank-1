@@ -315,7 +315,7 @@ export const CardSection = styled.section`
 `
 export const CardFooter = styled.div`
 margin: 0 auto;
-max-width:1200px;
+max-width:1260px;
 
 padding:20px;
 background-image: url(${ImgCellPhone});
