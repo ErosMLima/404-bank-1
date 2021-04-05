@@ -121,7 +121,9 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
   )
   else return (
     <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', width: '80vw', height: '80vh', background: '#7cc5ea'}}>
-      <Loader style={{ marginTop: '2rem', border: '4px solid #f0f0f0' }} />
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '50px'}}>
+        <Loader style={{ marginTop: '2rem' }} />
+      </div>
     </div>
   )
 

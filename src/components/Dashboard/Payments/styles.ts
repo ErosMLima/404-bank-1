@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
 `
 
 export const CardDashboard = styled.div`
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   padding: 42px;
@@ -61,7 +61,6 @@ export const CardDashboard = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    top: 10px;
     min-width: 90vw;
     max-height: 110vh;
   }

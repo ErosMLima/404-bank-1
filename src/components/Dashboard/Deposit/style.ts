@@ -91,7 +91,6 @@ export const Card = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    top: 10px;
     min-width: 90vw;
     max-height: 110vh;
   }

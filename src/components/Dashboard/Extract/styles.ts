@@ -22,6 +22,7 @@ export const CardDashboard = styled.div`
   box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
   height: 300px;
   overflow-y: scroll;
+  animation: 0.8s ease 0s 1 normal forwards showCards;
 
     .title {
         display: flex;
@@ -70,4 +71,14 @@ export const CardDashboard = styled.div`
             justify-content: space-between;
         }
     }
+
+     /* Animation Show cards */
+  @keyframes showCards{
+    0% {
+      opacity: 0.2;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
 `

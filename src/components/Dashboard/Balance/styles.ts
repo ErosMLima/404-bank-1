@@ -74,6 +74,7 @@ export const CardDashboard = styled.div`
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    animation: 0.8s ease 0s 1 normal forwards showCards;
     p  {
         margin-left: 1em;
     }
@@ -92,4 +93,13 @@ export const CardDashboard = styled.div`
         margin: 0;
         padding: 0;
     }
+    /* Animation Show cards */
+  @keyframes showCards{
+    0% {
+      opacity: 0.2;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
 `

@@ -27,6 +27,7 @@ export const Card = styled.div`
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    animation: 0.8s ease 0s 1 normal forwards showCards;
     div {
         width: 99%;
         img {
@@ -37,6 +38,15 @@ export const Card = styled.div`
             padding: 0 0.6rem;
         }
     }
+     /* Animation Show cards */
+  @keyframes showCards{
+    0% {
+      opacity: 0.2;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 
 export const CardDashboard = styled.div`

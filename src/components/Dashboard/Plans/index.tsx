@@ -106,13 +106,11 @@ const Plans: React.FC = () => {
       </PlansContainer>
     )
     else return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', width: '80vw', height: '80vh', background: '#7cc5ea'}}>
-        <Loader style={{ marginTop: '2rem', border: '4px solid #f0f0f0' }} />
+      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', width: '100vw', height: '100vh', background: '#7cc5ea'}}>
+        <Loader style={{ marginTop: '2rem' }} />
       </div>
     )
 }
-
-// div add Plans
 
 interface AddPlansModalProps extends HTMLAttributes<HTMLDivElement> {
   setPlans: Dispatch<SetStateAction<Plano[] | undefined>>

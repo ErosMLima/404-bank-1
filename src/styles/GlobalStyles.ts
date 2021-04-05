@@ -12,5 +12,7 @@ export default createGlobalStyle`
     body{
         background: #eeecef;
         min-height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
     }
 `
