@@ -54,6 +54,7 @@ export const CardDashboard = styled.div`
         padding: 0.5rem 0;
         display: flex;
         margin-bottom: 1rem;
+        border-bottom: 1px solid #c3c3c3;
         div {
             .negative {
                 color: red;

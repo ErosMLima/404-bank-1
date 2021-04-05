@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react'
-import currentIcon from '../../../assets/svgs/current-icon.svg'
+import moneyIcon from '../../../assets/svgs/money-icon.svg'
 import creditCardsIcon from '../../../assets/svgs/credit-cards-icon.svg'
 import { Conta } from '../../../types/dash-board'
 
 import { CardContainer, CardDashboard } from './styles'
+import { DashCardHeader } from '../../../styles/Shared'
 
 interface ExtractData {
     contaBanco?: Conta,
@@ -47,10 +48,10 @@ const Extract: React.FC<ExtractData> = (props) => {
     return (
         <CardContainer>
             <CardDashboard className="scroll">
-                <div className="title-container">
-                    <img src={currentIcon} alt="current icon" />
+                <DashCardHeader>
+                    <img src={moneyIcon} alt="money icon" />
                     <p>Últimos lançamentos</p>
-                </div>
+                </DashCardHeader>
                 {allLaunchs.length === 0 && 'Nenhum lancamento'}
                 {allLaunchs && allLaunchs.map((launch, index) => {
                     return (

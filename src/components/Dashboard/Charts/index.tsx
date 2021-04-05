@@ -1,7 +1,9 @@
 import React from 'react'
 import { BarChart, Bar, CartesianGrid, XAxis, Cell, YAxis } from 'recharts'
 
+import currentIcon from '../../../assets/svgs/bar-chart-icon.svg'
 import { CardContainer, Card, CardDashboard } from './style'
+import { DashCardHeader } from '../../../styles/Shared'
 
 type DataItem = {
   id: number
@@ -32,9 +34,10 @@ const Chart: React.FC<ChartProps> = ({ data, isMobile }) => {
   return (
     <CardContainer>
       <Card>
-      <div>
-        <p>Lançamentos</p>
-      </div>
+        <DashCardHeader>
+          <img src={currentIcon} alt="current icon" />
+          <p className="chart-title">Visualização</p>
+        </DashCardHeader>
       <CardDashboard>
       <BarChart width={data?.length ? data.length * 28 : 300} height={250} data={data} layout="horizontal">
         <Bar stackId="id" dataKey="value" >

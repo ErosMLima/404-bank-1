@@ -44,6 +44,12 @@ export const IdentificaUser = styled.div`
         span {
             cursor: pointer;
             vertical-align: bottom;
+            transition: all 0.5s;
+            &:hover {
+                background: #1da0e2;
+                padding: 0.5rem;
+                border-radius: 50%;
+          }
         }
     }
     @media only screen and (min-width: 768px) {
@@ -64,19 +70,10 @@ export const CardDashboard = styled.div`
     margin: 0.5rem 0;
     padding: 0.5rem;
     width: 100%;
+    max-height: 250px;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
-    img {
-        margin-left: 0.7rem;
-    }
-    .title{
-        display: flex;
-        margin: 0.25rem 0 1rem 0;
-        p {
-            margin: 0.5rem 0 0 0.75rem;
-        }
-    }
     p  {
         margin-left: 1em;
     }
@@ -89,5 +86,10 @@ export const CardDashboard = styled.div`
         border-radius: 5px;
         width: 80%;
         transition: all 0.2s;
+    }
+    @media only screen and (min-width: 768px) {
+        height: 230px;
+        margin: 0;
+        padding: 0;
     }
 `

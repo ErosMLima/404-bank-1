@@ -139,3 +139,27 @@ export const LoadingContainer = styled.div`
   bottom: 20px;
   margin: 2rem auto;
 `
+
+export const DashCardHeader = styled.div`
+  display: flex;
+  align-content: center;
+  height: 60px;
+  background: #ececec;
+  border-radius: top 5px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #b7b7b7;
+  margin: 0 0 0.5rem 0;
+  img {
+    width: 48px;
+    padding: 0rem 0.5rem;
+  }
+  p {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+  }
+  .chart-title {
+    padding-left: 0.7rem;
+  }
+`

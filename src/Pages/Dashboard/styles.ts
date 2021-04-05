@@ -86,13 +86,13 @@ export const DashNavigation = styled.div`
           margin: 0 20px;
           a {
               cursor: pointer;
-              padding:10px 10px 0 10px;
-              border-radius:5px;
-              transition:0.15s;
+              transition: 0.5s;
             svg {
-                margin-top:5px;
+              vertical-align: bottom;
               } &:hover{
-            background:#1da0e2;
+                background: #1da0e2;
+                padding: 0.4rem;
+                border-radius: 50%;
           }
           }
         }

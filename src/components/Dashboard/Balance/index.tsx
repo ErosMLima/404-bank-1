@@ -6,6 +6,7 @@ import { ApplicationStore } from '../../../store'
 import { useSelector, useDispatch } from 'react-redux'
 import { hide_dashboard_data } from '../../../store/dashboard/actions'
 import { BalanceContainer, IdentificaUser, CardDashboard, BalanceMiddle } from './styles'
+import { DashCardHeader } from '../../../styles/Shared'
 
 interface Total {
   banco: number,
@@ -88,12 +89,16 @@ const Balance: React.FC<AccountProps> = (props) => {
 
         <BalanceMiddle>
           <CardDashboard className="nachos">
-            <div className='title'>
+            <DashCardHeader>
               <img src={currentIcon} alt="current icon" />
               <p>Conta</p>
+            </DashCardHeader>
+
+            <div>
+              <p>Saldo disponivel</p>
+              <h3 className={`value acccount ${hide ? 'hide' : ''}`} title={contaBanco?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}>{contaBanco?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h3>
             </div>
-            <p>Saldo disponivel</p>
-            <h3 className={`value acccount ${hide ? 'hide' : ''}`} title={contaBanco?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}>{contaBanco?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h3>
+
             <div>
               <p>Transações</p>
               <h3 className={hide ? 'hide' : ''} title={totalTransactions.banco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}>{totalTransactions.banco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h3>
@@ -101,13 +106,16 @@ const Balance: React.FC<AccountProps> = (props) => {
           </CardDashboard>
 
           <CardDashboard>
-            {/*  */}
-            <div className='title'>
-              <img src={creditIcon} alt="current icon" />
+            <DashCardHeader>
+              <img src={creditIcon} alt="credit icon" />
               <p>Conta Crédito</p>
+            </DashCardHeader>
+
+            <div>
+              <p>Fatura atual</p>
+              <h3 className={`value credit ${hide ? 'hide' : ''}`} title={contaCredito?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}>{contaCredito?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h3>
             </div>
-            <p>Fatura atual</p>
-            <h3 className={`value credit ${hide ? 'hide' : ''}`} title={contaCredito?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}>{contaCredito?.saldo.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h3>
+
             <div>
               <p>Limite Disponivel</p>
               <h3 className={hide ? 'hide' : ''} title={totalTransactions.credito.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })

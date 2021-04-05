@@ -12,7 +12,7 @@ export const CardContainer = styled.div`
     line-height: 1rem;
     font-family: 'Concert One', cursive;
     @media only screen and (min-width: 768px) {
-        padding: 0;
+        padding: 0.5rem 1rem;
     }
 `
 
@@ -21,12 +21,22 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 1rem;
-    padding: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     width: 100%;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    div {
+        width: 99%;
+        img {
+            width: 48px;
+            padding: 0rem 0.2rem;
+        }
+        p {
+            padding: 0 0.6rem;
+        }
+    }
 `
 
 export const CardDashboard = styled.div`
