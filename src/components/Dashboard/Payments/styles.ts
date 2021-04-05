@@ -1,25 +1,21 @@
 import styled from "styled-components"
 
 export const CardContainer = styled.div`
-  width: 100%;
-  background: #7cc5ea;
-  align-self: flex-start;
-  max-width: 1260px;
   display: flex;
   justify-content: center;
-
+  align-self: flex-start;
+  width: 100%;
+  max-width: 1260px;
+  padding: 1rem 3rem;
   background: #7cc5ea;
-  padding: 73px;
 `
 
 export const CardDashboard = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-
   padding: 42px;
   border-radius: 5px;
-
   background-color: #fdf9f9;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 

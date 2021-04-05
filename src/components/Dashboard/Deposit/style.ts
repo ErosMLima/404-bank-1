@@ -6,18 +6,18 @@ export const DepositContainer = styled.div`
   background: #7cc5ea;
   height: 90vh;
   width: 100vw;
+  max-width: 1260px;
+  padding: 0.1rem 3rem;
 `
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-self: flex-start;
+  width: 100%;
   margin: 1rem auto;
-
-
   background: #7cc5ea;
-  padding: 73px;
-
+  padding: 1rem 3rem;
 `
 
 export const ChangeButton = styled.button`

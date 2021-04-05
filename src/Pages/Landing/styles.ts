@@ -314,16 +314,15 @@ export const CardSection = styled.section`
 }
 `
 export const CardFooter = styled.div`
-margin: 0 auto;
-max-width:1260px;
-
-padding:20px;
-background-image: url(${ImgCellPhone});
+    width: 100vw;
+    max-width: 1260px;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(${ImgCellPhone});
     background-repeat: no-repeat;
     background-position:right bottom;
     background-size:25%;
-    width: 100vw;
-    height: 60vh;
 ul{
     display:flex;
     justify-content:center;

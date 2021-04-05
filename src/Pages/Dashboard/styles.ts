@@ -56,6 +56,7 @@ export const DashMain = styled.div`
   display: flex;
   width: 100%;
   background: #7cc5ea;
+  justify-content: center;
 `
 
 export const DashNavBottom = styled.div`

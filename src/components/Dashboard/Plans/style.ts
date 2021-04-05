@@ -3,20 +3,29 @@ import styled from "styled-components"
 export const PlansContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: #7cc5ea;
-  height: 90vh;
+  align-self: flex-start;
+  justify-content: center;
   width: 100vw;
-  align-content: center;
-  align-items: center;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  background: #7cc5ea;
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+    max-width: 600px
+  }
 `
 
 export const Repositories = styled.div`
-  width: 100%;
-  max-width: 1260px;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fdf9f9;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 `
 export const PlanCards = styled.div`
@@ -25,16 +34,16 @@ export const PlanCards = styled.div`
   flex-direction: column;
   justify-self: center;
   justify-items: center;
+  padding: 1rem 0;
 
   a {
-    background: #fff;
-    border-radius: 5px;
-    padding: 24px;
-    text-decoration: none;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #d4cece;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
     transition: transform 0.2s;
 
       & + a {
@@ -51,36 +60,45 @@ export const PlanCards = styled.div`
           color: #3d3d4d;
         }
       }
-  }
-  @media only screen and (min-width: 768px) {
-    flex-direction: column;
-    a {
-      flex-direction: row;
-    }
+      .splitter {
+        width: 60%;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 0.2rem 0;
+      }
+      .type-movement {
+        margin: 0.2rem;
+      }
+      .type-movement-code {
+        margin-left: 0.2rem;
+        font-weight: bold;
+      }
   }
 `
 
 export const AddPlans = styled.div`
-  cursor: pointer;
-  width: 200px;
-  height: 40px;
-  border: 0;
-  border-radius: 8px;
-  color: #ffff;
-  background-color: #3c92fd;
-  display: flex;
-  margin: 1.5rem auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  justify-content: center;
-  align-items: center;
+  button {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border: 0;
+    border-radius: 8px;
+    color: #ffff;
+    background-color: #3c92fd;
+    display: flex;
+    margin: 1.5rem auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const CardModal = styled.div`
   display: flex;
   position: fixed;
   top: 0px;
+  left: 0;
   background: #0000008f;
 `
 

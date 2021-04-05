@@ -83,7 +83,7 @@ const Plans: React.FC = () => {
         {plans && (
           <AddPlans className="addCard" onClick={() => setIsAddingCard(true)}>
             {/* <MdAdd className="icon" size={30} /> */}
-            <p>Adicionar novo plano</p>
+            <button>Adicionar novo plano</button>
           </AddPlans>
         )}
         <Repositories>
@@ -92,11 +92,11 @@ const Plans: React.FC = () => {
             return (
                 <a key={index}>
                   <p className="title-card">
-                    <b>{plan.descricao}: </b>
+                    <strong>{plan.descricao} </strong>
                   </p>
-                  <p> {plan.login} / </p>
+                  <span className="splitter"></span>
                   <p className="type-movement">
-                    Movimentação tipo: <span> {plan.tipoMovimento}</span>
+                    Movimentação tipo: <span className="type-movement-code"> {plan.tipoMovimento}</span>
                   </p>
                 </a>
             )
@@ -105,7 +105,7 @@ const Plans: React.FC = () => {
         </Repositories>
       </PlansContainer>
     )
-  else return <Loader style={{ border: "solid #f0f0f0 4px" }} />
+  else return <PlansContainer><Loader style={{ marginTop: '3rem', paddingTop: '3rem', border: "solid #f0f0f0 4px" }} /></PlansContainer>
 }
 
 // div add Plans
