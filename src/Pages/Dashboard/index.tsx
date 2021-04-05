@@ -125,7 +125,7 @@ const Dashboard: React.FC = () => {
             <DashNavigation>
               <nav>
                 <ul>
-                  <img style={{ width: '30%' }} src={logoNow} alt="NowBank icon" />
+                  <img style={{ width: '25%' }} src={logoNow} alt="NowBank icon" />
                 </ul>
                 <ul>
                   <li>

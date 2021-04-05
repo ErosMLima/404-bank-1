@@ -70,7 +70,7 @@ export const DashNavBottom = styled.div`
 
 export const DashNavigation = styled.div`
   background:#7CC5EA;
-  width: 100vw;
+  width: 100%;
   nav {
     display: flex;
     justify-content: space-around;
@@ -103,7 +103,7 @@ export const DashNavigation = styled.div`
     justify-content: space-between;
   }
   .bottom {
-    border: 2px solid red;
+    max-width: 1260px;
   }
 }
 

@@ -156,7 +156,10 @@ const Payments: React.FC<PaymentsProps> = () => {
             <Input name="transferValue" value={valor ? valor : ''} onChange={handleChangeValue} type="number" placeholder="Qual o valor de sua transferência?" />
 
             {loading ? (
-              <Loader style={{ marginTop: 59 }} />
+              <div style={{ display: 'flex', width: '100%', height: '50px'}}>
+                <Loader />
+              </div>
+
               ) : (
                 <button className="button-transferir" type="submit">
                   <p>Transferir agora</p>

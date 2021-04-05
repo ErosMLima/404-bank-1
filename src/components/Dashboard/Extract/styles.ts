@@ -50,7 +50,7 @@ export const CardDashboard = styled.div`
     .receipts {
         flex: 1;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 0.5rem 0;
         display: flex;
         margin-bottom: 1rem;

@@ -29,7 +29,6 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
   const [ contas, setContas ] = useState<Contas>()
   const [ loaded, setLoaded ] = useState(true)
   const [ referenceDate, setReferenceDate ] = useState(1)
-  // const [ lancamentos, setLancamentos ] = useState([])<any>
   const [ chartData, setChartData ] = useState<TDataItem[]>()
 
   const user = useSelector( (state: ApplicationStore) => state.user )
@@ -120,7 +119,11 @@ const Transactions: React.FC<TransactionsProps> = ({ isMobile }) => {
 
     </BalanceExtractContainer>
   )
-  else return <Loader style={{ border: '4px solid #f0f0f0' }} />
+  else return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', width: '80vw', height: '80vh', background: '#7cc5ea'}}>
+      <Loader style={{ marginTop: '2rem', border: '4px solid #f0f0f0' }} />
+    </div>
+  )
 
 }
 

@@ -47,7 +47,7 @@ const Login: React.FC = () => {
       formRef.current?.setErrors({})
 
       const schema = yup.object().shape({
-        username: yup.string().required('Nome de usuário obrigatório '),
+        username: yup.string().required('Nome de usuário obrigatório'),
         password: yup.string().required('Senha obrigatória'),
       })
 

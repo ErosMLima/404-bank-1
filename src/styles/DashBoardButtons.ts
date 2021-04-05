@@ -51,13 +51,13 @@ export const BtnContainer = styled.div<BtnContainerProps>`
   justify-content: space-around;
   background-color: ${(props) => props.backgroundColor};
   color: white;
-  width: 17%;
-  height: 5rem;
+  width: 16%;
+  height: 4.5rem;
   margin: 1rem;
   border-radius: 5px;
   border-left: 15px solid rgba(0, 0, 0, 0.144);
   @media only screen and (min-width: 768px) {
-    height: 9rem;
+    height: 8rem;
   }
   //border-top: 40px solid rgba(0, 0, 0, 0.075);
   //box-shadow: 5px 10px 15px rgb(211 205 205);

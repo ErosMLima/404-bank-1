@@ -17,7 +17,6 @@ import getValidationErrors from "../../../utils/getValidationErrors"
 import Loader from "../../Loader"
 
 import { DepositContainer, Container, Card, ChangeButton } from "./style"
-import { LoadingContainer } from '../../../styles/Shared'
 
 const Deposit: React.FC = () => {
   const dispatch = useDispatch()
@@ -195,9 +194,9 @@ const Deposit: React.FC = () => {
               />
 
               {loading ? (
-                <LoadingContainer>
+                <div style={{ display: 'flex', width: '100%', height: '50px'}}>
                   <Loader />
-                </LoadingContainer>
+                </div>
               ) : (
                 <button type="submit" className="button-Deposit">
                   <p>

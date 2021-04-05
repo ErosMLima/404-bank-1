@@ -105,7 +105,11 @@ const Plans: React.FC = () => {
         </Repositories>
       </PlansContainer>
     )
-  else return <PlansContainer><Loader style={{ marginTop: '3rem', paddingTop: '3rem', border: "solid #f0f0f0 4px" }} /></PlansContainer>
+    else return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', width: '80vw', height: '80vh', background: '#7cc5ea'}}>
+        <Loader style={{ marginTop: '2rem', border: '4px solid #f0f0f0' }} />
+      </div>
+    )
 }
 
 // div add Plans
