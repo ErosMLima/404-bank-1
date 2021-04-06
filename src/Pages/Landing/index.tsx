@@ -104,8 +104,8 @@ const Landing: React.FC = () => {
         return
       }
 
-      if(!checkNameAndLastName(name)) {
-        toast.error('Digite o nome e o último nome')
+      if(!checkFullName(name)) {
+        toast.error('Digite o nome completo')
         return
       }
 
@@ -133,7 +133,7 @@ const Landing: React.FC = () => {
         history.push('/error')
       }
     } catch (err) {
-      if (err.response?.data?.error?.includes('Já existe um usuario cadastrado com o login')) {
+      if (err.response?.data?.error?.includes('Já existe um usuario cadastrado com o login utilizado')) {
         toast.error(`Nome de usuário "${username}" indisponível!`)
       }
       const errors = getValidationErrors(err)
@@ -205,14 +205,22 @@ const Landing: React.FC = () => {
         return true
   }
 
-  const checkNameAndLastName = (name: string): boolean => {
-    const regName = /^[a-zA-Z]+ [a-zA-Z]+$/
-    if (!regName.test(name)){
-      return false
-    } else {
-      return true
+  const checkFullName = (name: string): boolean => {
+    const regName = /^[a-zA-Z]+$/
+    const nameArr = Array.from(name.trim().split(' '))
+    let total = 0
+
+    if (!nameArr || nameArr.length <= 1) return false
+
+    if (nameArr.length > 1) {
+        nameArr.forEach(na => {
+            if (regName.test(na)) total = total + 1
+        })
     }
-  }
+
+    if (nameArr.length === total) return true
+    else return false
+}
 
   return (
     <>
